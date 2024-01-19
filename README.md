@@ -1,12 +1,13 @@
-# BeerRobot
+# Beer Robot
 
-Description:
+## Description
 
   Mecanum Mobile Robotics Platform to aid in the completion of everyday tasks.
   This is a low profile mobile platform measuring ~(footprint)400mm x 300mm
   This is a Mecanum driven robot (omnidirectional) with a 4-axis arm attached to it
 
-Goal:
+## Goal
+
   Activation via Google Voice API - Robot retrieval of user specific object from within
   predetermined space.
 
@@ -20,6 +21,7 @@ mkdir -p catkin_ws/src
 cd catkin_ws/src
 
 git clone https://github.com/vlad-mantoiu/BeerRobot.git
+#git clone git@github.com:vlad-mantoiu/BeerRobot.git
 
 cd ..
 
@@ -28,7 +30,6 @@ catkin_make
 source devel/setup.bash
 
 ```
-ssh (git clone git@github.com:vlad-mantoiu/BeerRobot.git)
 
 ## Commands
 
@@ -41,28 +42,28 @@ roslaunch mobile_robot gazebo.launch
 ```
 
 
-Acceptance Criteria:
+# Acceptance Criteria
 
-  User activates Google Home system via voice from specific room in house
-  User requests "Bring me a beer"
-  Robot is aware of its current position
-  Robot activates from "sleep" state
-  Robot navigates to predetermined location of "Fridge"
-  Robot localises using Aruco Markers
-  //Robot uses arm gripper to pick up "beer"
-  Robot navigates to room containing Google device
-  Robot uses D435i to detect person
-  Robot navigates to person
-  //Robot presents "beer"
-  //Robot releases "beer"
-  Robot returns to home location
-  Robot re-enters "sleep" state
+  - [ ] User activates Google Home system via voice from specific room in house
+  - [ ] User requests "Bring me a beer"
+  - [ ] Robot is aware of its current position
+  - [ ] Robot activates from "sleep" state
+  - [ ] Robot navigates to predetermined location of "Fridge"
+  - [ ] Robot localises using Aruco Markers
+  - [ ] ~~Robot uses arm gripper to pick up "beer"~~
+  - [ ] Robot navigates to room containing Google device
+  - [ ] Robot uses D435i to detect person
+  - [ ] Robot navigates to person
+  - [ ] ~~Robot presents "beer"~~
+  - [ ] ~~Robot releases "beer"~~
+  - [ ] Robot returns to home location
+  - [ ] Robot re-enters "sleep" state
 
 
 
-Mobile Robotics Platform Specifications
+# Mobile Robotics Platform Specifications
 
-Parts:  
+## Parts
 
     Electrical:
     
