@@ -11,6 +11,35 @@ Goal:
   predetermined space.
 
 
+## Build
+
+```bash
+# create the workspace catkin_ws/src
+mkdir -p catkin_ws/src
+
+cd catkin_ws/src
+
+git clone https://github.com/vlad-mantoiu/BeerRobot.git
+
+cd ..
+
+catkin_make
+
+source devel/setup.bash
+
+```
+
+## Commands
+
+```bash
+# rviz
+roslaunch mobile_robot display.launch
+
+# gazebo
+roslaunch mobile_robot gazebo.launch
+```
+
+
 Acceptance Criteria:
 
   User activates Google Home system via voice from specific room in house
