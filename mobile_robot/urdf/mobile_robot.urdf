@@ -263,7 +263,7 @@
     <inertial>
       <origin
         xyz="0.00615499275501901 0.0265025506034513 0.0115803179816844"
-        rpy="-1.5708 0 -1.12" />
+        rpy="-1.5708 0 2.02" />
       <mass
         value="0.0625978718920556" />
       <inertia
@@ -277,7 +277,7 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="-1.5708 0 -1.12" />
+        rpy="-1.5708 0 2.02" />
       <geometry>
         <mesh
           filename="package://mobile_robot/meshes/lidar.STL" />
@@ -291,7 +291,7 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="-1.5708 0 -1.12" />
+        rpy="-1.5708 0 2.02" />
       <geometry>
         <mesh
           filename="package://mobile_robot/meshes/lidar.STL" />
