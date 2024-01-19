@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot
+  name="mobile_robot">
+
+  <link name="base_footprint" />
+  <joint name="base_joint" type="fixed">
+    <parent link="base_footprint" />
+    <child link="base_link" />
+    <origin rpy="0 0 -1.571" />
+  </joint>
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-7.21353338584021E-05 0.053089226138797 0.0253124328907089"
+        rpy="0 0 0" />
+      <mass
+        value="2.53586864209145" />
+      <inertia
+        ixx="0.0130988660125112"
+        ixy="1.5439039788008E-08"
+        ixz="-7.0245263255295E-06"
+        iyy="0.0187432257323379"
+        iyz="1.4171423681933E-06"
+        izz="0.0068253762585396" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.96078431372549 0.96078431372549 0.964705882352941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="fl_wheel">
+    <inertial>
+      <origin
+        xyz="-0.035446536837034 -0.00945419469287452 -0.0350657249459968"
+        rpy="0 0 0" />
+      <mass
+        value="0.209242205270652" />
+      <inertia
+        ixx="6.18813822893826E-05"
+        ixy="1.00728808725636E-05"
+        ixz="-4.2499966894806E-06"
+        iyy="6.38594165349346E-05"
+        iyz="-4.68734521554026E-06"
+        izz="5.47268237519724E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot/meshes/fl_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.152941176470588 0.152941176470588 0.152941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot/meshes/fl_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fl_joint"
+    type="fixed">
+    <origin
+      xyz="-0.16241 0.18625 0.080068"
+      rpy="-0.94821 -0.86247 -0.17082" />
+    <parent
+      link="base_link" />
+    <child
+      link="fl_wheel" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="fr_wheel">
+    <inertial>
+      <origin
+        xyz="-0.0121731912534891 0.00395386396752551 0.0258900875575578"
+        rpy="0 0 0" />
+      <mass
+        value="0.209242205445262" />
+      <inertia
+        ixx="5.27492978645977E-05"
+        ixy="-1.48332883054147E-10"
+        ixz="6.88060983030131E-11"
+        iyy="5.27489117610667E-05"
+        iyz="1.88098980530649E-10"
+        izz="7.49694134144625E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot/meshes/fr_wheel.STL" />
+      </geometry>
+      <material
+        name="black">
+        <color
+          rgba="0.96078431372549 0.96078431372549 0.964705882352941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot/meshes/fr_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fr_joint"
+    type="fixed">
+    <origin
+      xyz="0.20724 0.16719 0.048796"
+      rpy="-1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="fr_wheel" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="bl_wheel">
+    <inertial>
+      <origin
+        xyz="-0.012173191130377 -0.0039538636153987 -0.0258900874668579"
+        rpy="0 0 0" />
+      <mass
+        value="0.209242205270651" />
+      <inertia
+        ixx="5.27492981340793E-05"
+        ixy="1.49043913486474E-10"
+        ixz="-6.88056867799049E-11"
+        iyy="5.27489112903855E-05"
+        iyz="1.88177109413795E-10"
+        izz="7.49694131518243E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot/meshes/bl_wheel.STL" />
+      </geometry>
+      <material
+        name="black">
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot/meshes/bl_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bl_joint"
+    type="fixed">
+    <origin
+      xyz="-0.20724 -0.16716 0.048796"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="bl_wheel" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="br_wheel">
+    <inertial>
+      <origin
+        xyz="0.0132863573329233 0.0196855970551316 0.0307900875575582"
+        rpy="0 0 0" />
+      <mass
+        value="0.209242205445262" />
+      <inertia
+        ixx="5.27488690365847E-05"
+        ixy="-6.06728068393986E-11"
+        ixz="-1.99230581583928E-10"
+        iyy="5.27493405890799E-05"
+        iyz="-2.05592111104188E-11"
+        izz="7.49694134144627E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot/meshes/br_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.768627450980392 0.772549019607843 0.768627450980392 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot/meshes/br_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="br_joint"
+    type="fixed">
+    <origin
+      xyz="0.21214 -0.16686 0.024274"
+      rpy="1.5708 -1.1173 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="br_wheel" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="lidar">
+    <inertial>
+      <origin
+        xyz="0.00615499275501901 0.0265025506034513 0.0115803179816844"
+        rpy="-1.5708 0 -1.12" />
+      <mass
+        value="0.0625978718920556" />
+      <inertia
+        ixx="2.03360596137219E-05"
+        ixy="1.95242682743797E-07"
+        ixz="-1.59529409623501E-06"
+        iyy="3.56531824109386E-05"
+        iyz="3.81877297208081E-07"
+        izz="1.75442755220241E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="-1.5708 0 -1.12" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot/meshes/lidar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.43921568627451 0.43921568627451 0.43921568627451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="-1.5708 0 -1.12" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot/meshes/lidar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar_joint"
+    type="fixed">
+    <origin
+      xyz="0 0.15432 0.12138"
+      rpy="0 0 1.571" />
+    <parent
+      link="base_link" />
+    <child
+      link="lidar" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <gazebo>
+    <plugin name="omni_drive_plugin" filename="libgazebo_ros_planar_move.so">
+      <commandTopic>cmd_vel</commandTopic>
+      <odometryTopic>odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <odometryRate>20.0</odometryRate>
+      <robotBaseFrame>base_footprint</robotBaseFrame>
+    </plugin>
+  </gazebo>
+
+  <gazebo reference="lidar">
+    <sensor type="ray" name="lidar_sensor">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>true</visualize>
+      <update_rate>10</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>720</samples>
+            <resolution>1</resolution>
+            <min_angle>-1.05</min_angle>
+            <max_angle>1.05</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.10</min>
+          <max>30.0</max>
+          <resolution>0.01</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
+        <topicName>scan</topicName>
+        <frameName>lidar</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+
+</robot>
