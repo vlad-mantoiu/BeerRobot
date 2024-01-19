@@ -28,6 +28,7 @@ catkin_make
 source devel/setup.bash
 
 ```
+ssh (git clone git@github.com:vlad-mantoiu/BeerRobot.git)
 
 ## Commands
 
