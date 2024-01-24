@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+    <node pkg="rviz" type="rviz" name="rviz" required="true"
+        args="-d $(find mobile_robot_nav)/config/nav.rviz" />
+</launch>
