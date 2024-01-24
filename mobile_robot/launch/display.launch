@@ -1,9 +1,5 @@
 <launch>
-  <arg
-    name="model" />
-  <param
-    name="robot_description"
-    textfile="$(find mobile_robot)/urdf/mobile_robot.urdf" />
+  <param name="robot_description" command="$(find xacro)/xacro --inorder $(find mobile_robot)/urdf/mobile_robot.urdf.xacro" />
   <node
     name="robot_state_publisher"
     pkg="robot_state_publisher"
