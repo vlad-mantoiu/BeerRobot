@@ -11,38 +11,6 @@
   Activation via Google Voice API - Robot retrieval of user specific object from within
   predetermined space.
 
-
-## Build
-
-```bash
-# create the workspace catkin_ws/src
-mkdir -p catkin_ws/src
-
-cd catkin_ws/src
-
-git clone https://github.com/vlad-mantoiu/BeerRobot.git
-#git clone git@github.com:vlad-mantoiu/BeerRobot.git
-
-cd ..
-
-catkin_make
-
-source devel/setup.bash
-
-```
-
-## Commands
-
-```bash
-# rviz
-roslaunch mobile_robot display.launch
-
-# gazebo
-roslaunch mobile_robot gazebo.launch
-```
-
-
-
 # Acceptance Criteria
 
   - [ ] User activates Google Home system via voice from specific room in house
@@ -60,6 +28,18 @@ roslaunch mobile_robot gazebo.launch
   - [ ] Robot returns to home location
   - [ ] Robot re-enters "sleep" state
 
+## Hardware Todo List
+
+  - [X] Create CAD Model
+  - [X] Source Aluminium Parts
+  - [X] Source Electronic + Electrical
+  - [ ] Create schematic
+  - [ ] Trim Motor Wires
+  - [ ] Integrate Teensy
+  - [ ] Countersink bottom holes
+  - [ ] Create D435i Mount
+  - [ ] Dry fit battery Test all components
+  - [ ] Start panicking about Arduino Code
 
 
 # Mobile Robotics Platform Specifications
@@ -121,6 +101,35 @@ roslaunch mobile_robot gazebo.launch
 
         CUI Devices AMT103 Motor Encoders (https://www.cuidevices.com/product/resource/amt10.pdf)
 
+## Build
+
+```bash
+# create the workspace catkin_ws/src
+mkdir -p catkin_ws/src
+
+cd catkin_ws/src
+
+git clone https://github.com/vlad-mantoiu/BeerRobot.git
+#git clone git@github.com:vlad-mantoiu/BeerRobot.git
+
+cd ..
+
+catkin_make
+
+source devel/setup.bash
+
+```
+
+## Commands
+
+```bash
+# rviz
+roslaunch mobile_robot display.launch
+
+# gazebo
+roslaunch mobile_robot gazebo.launch
+```
+
 ## Commands for mapping
 
 ```bash
@@ -138,5 +147,6 @@ roslaunch mobile_robot gazebo_house.launch
 
 roslaunch mobile_robot_nav nav.launch
 ```
+
 
         
