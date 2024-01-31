@@ -148,5 +148,14 @@ roslaunch mobile_robot gazebo_house.launch
 roslaunch mobile_robot_nav nav.launch
 ```
 
+## Commands for Testing
 
+```bash
+rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0 _baud:=57600
+
+rostopic echo /cmd_vel
+
+rostopic echo /buttons
+
+```
         
