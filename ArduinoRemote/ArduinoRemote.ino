@@ -48,12 +48,12 @@ void setup() {
   pinMode(A5, INPUT);
   pinMode(A6, INPUT);
 
-  nh.getHardware()->setBaud(115200);      // set baud rate to 115200
+  nh.getHardware()->setBaud(57600);      // set baud rate to 115200
   nh.initNode();              // init ROS
   nh.advertise(joy_pub);      // advertise topic
   nh.advertise(pub_button);   // advertise topic
 
-  Serial.begin(9600);
+  Serial.begin(57600);
 
 }
 
@@ -158,7 +158,7 @@ void loop() {
             // Update the Twist message
             twist.linear.x = stick2;
             twist.linear.y = stick4;
-            twist.linear.z = stick3;
+            twist.angular.z = stick3;
 
             joy_pub.publish(&twist);        // make the message ready to publish            
 
