@@ -34,12 +34,12 @@
   - [X] Source Aluminium Parts
   - [X] Source Electronic + Electrical
   - [ ] Create schematic
-  - [ ] Trim Motor Wires
+  - [X] Trim Motor Wires
   - [ ] Integrate Teensy
   - [ ] Countersink bottom holes
   - [ ] Create D435i Mount
   - [ ] Dry fit battery Test all components
-  - [ ] Start panicking about Arduino Code
+  - [X] Start panicking about Arduino Code
 
 
 # Mobile Robotics Platform Specifications
