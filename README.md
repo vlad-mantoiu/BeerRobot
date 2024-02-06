@@ -6,7 +6,8 @@
   This is a low profile mobile platform measuring ~(footprint)400mm x 300mm 
   This is a Mecanum driven robot (omnidirectional) with a 4-axis arm attached to it
 
-  ![Rendering of current iteration](marketingImages/Robot v3 v15 lights.png)
+   ![Robot v3 v15 lights](https://github.com/vlad-mantoiu/BeerRobot/assets/87762592/75911cb3-a507-4167-93e5-43bfa8597de8)
+
 
 ## Goal
 
@@ -43,8 +44,14 @@
   - [ ] Dry fit battery Test all components
   - [X] Start panicking about Arduino Code
 
+  ![Screenshot 2024-01-29 at 11 56 45 pm](https://github.com/vlad-mantoiu/BeerRobot/assets/87762592/bd5ffd78-8b65-4afe-a909-fc2bde83c3ce)
+
+
 
 # Mobile Robotics Platform Specifications
+
+![IMG_6901](https://github.com/vlad-mantoiu/BeerRobot/assets/87762592/47151dee-5b44-4be3-865a-9d99ff8bb5ed)
+
 
 ## Parts
 
