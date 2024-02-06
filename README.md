@@ -3,8 +3,10 @@
 ## Description
 
   Mecanum Mobile Robotics Platform to aid in the completion of everyday tasks.
-  This is a low profile mobile platform measuring ~(footprint)400mm x 300mm
+  This is a low profile mobile platform measuring ~(footprint)400mm x 300mm 
   This is a Mecanum driven robot (omnidirectional) with a 4-axis arm attached to it
+
+  ![Rendering of current iteration](marketingImages/Robot v3 v15 lights.png)
 
 ## Goal
 
