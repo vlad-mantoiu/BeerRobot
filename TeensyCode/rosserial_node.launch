@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<launch>
+    <node pkg="rosserial_python" name="robot_serial_node" type="serial_node.py" output="screen">
+        <arg name="port" value="/dev/ttyUSB0" />
+        <arg name="baud" value="57600" />
+    </node>
+</launch>
